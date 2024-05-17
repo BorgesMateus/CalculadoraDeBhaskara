@@ -1,0 +1,21 @@
+algoritmo "Bhaskara"
+var
+   A, B, C, Delta1, Delta2, bhask1, bhask2, negativo: Real
+inicio
+      Escreva ("Digite o número A: ")
+      Leia (A)
+      Escreva ("Digite o número B: ")
+      Leia (B)
+      Escreva ("Digite o número C: ")
+      Leia (C)
+      Delta1 <- B ^ 2
+      Delta2 <- Delta1 - (4 * A * C)
+      se Delta2 < 0 então
+        Escreva("Número negativo não tem raíz")
+      senão
+        Escreval ("O delta é : ", Delta2)
+        bhask1 <- ((-B) + raizQ(Delta2)) / 2 * A
+        bhask2 <- ((-B) - raizQ(Delta2)) / 2 * A
+        Escreva ("O x' é ", bhask1," e o X'' é ", bhask2)
+      fimse
+fimalgoritmo
